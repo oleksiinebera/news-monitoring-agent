@@ -1,10 +1,4 @@
-requests
-beautifulsoup4
-pandas
-matplotlib
-telethon
 streamlit
 fpdf
-transformers
-torch
-scikit-learn
+python-docx
+python-telegram-bot==20.3
