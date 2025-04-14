@@ -46,8 +46,9 @@ if submitted:
 
     # PDF
     pdf = FPDF()
-    pdf.add_page()
-    pdf.set_font("Arial", size=12)
+pdf.add_page()
+pdf.add_font("DejaVu", "", "DejaVuSans.ttf", uni=True)
+pdf.set_font("DejaVu", size=12)
     pdf.cell(200, 10, txt="News Report", ln=True, align='C')
     for res in results:
         pdf.multi_cell(0, 10, f"{res['date']} — {res['title']}\n{res['summary']}\n{res['url']}\n")
