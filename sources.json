@@ -1,0 +1,230 @@
+[
+  {
+    "name": "Українська правда",
+    "url": "https://www.pravda.com.ua/",
+    "article_selector": "div.article__title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Обозреватель",
+    "url": "https://www.obozrevatel.com/",
+    "article_selector": "div.item__title",
+    "link_tag": "a"
+  },
+  {
+    "name": "ТСН",
+    "url": "https://tsn.ua/",
+    "article_selector": "div.c-card__title",
+    "link_tag": "a"
+  },
+  {
+    "name": "УНИАН",
+    "url": "https://www.unian.ua/",
+    "article_selector": "div.main-news__title",
+    "link_tag": "a"
+  },
+  {
+    "name": "РБК Украина",
+    "url": "https://www.rbc.ua/",
+    "article_selector": "div.item__title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Цензор.НЕТ",
+    "url": "https://censor.net/",
+    "article_selector": "a.news_title",
+    "link_tag": null
+  },
+  {
+    "name": "НВ",
+    "url": "https://nv.ua/",
+    "article_selector": "h2.card__title",
+    "link_tag": "a"
+  },
+  {
+    "name": "ЛІГА.net",
+    "url": "https://www.liga.net/",
+    "article_selector": "a.news-item__title",
+    "link_tag": null
+  },
+  {
+    "name": "Корреспондент.net",
+    "url": "https://korrespondent.net/",
+    "article_selector": "div.article__title",
+    "link_tag": "a"
+  },
+  {
+    "name": "24 Канал",
+    "url": "https://24tv.ua/",
+    "article_selector": "a.news-feed__item",
+    "link_tag": null
+  },
+  {
+    "name": "Укрінформ",
+    "url": "https://www.ukrinform.ua/",
+    "article_selector": "div.block-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Новости Донбасса",
+    "url": "https://novosti.dn.ua/",
+    "article_selector": "div.post-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Вчасно UA",
+    "url": "https://vchasnoua.com/",
+    "article_selector": "h2.entry-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Варіант",
+    "url": "https://v-variant.com.ua/",
+    "article_selector": "div.item-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Інформатор Дніпро",
+    "url": "https://dp.informator.ua/",
+    "article_selector": "a.card__link",
+    "link_tag": null
+  },
+  {
+    "name": "Город Днепр",
+    "url": "https://gorod.dp.ua/",
+    "article_selector": "div.nblock",
+    "link_tag": "a"
+  },
+  {
+    "name": "056.ua",
+    "url": "https://www.056.ua/",
+    "article_selector": "div.article-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Most Kherson",
+    "url": "https://most.ks.ua/",
+    "article_selector": "h2.post-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Kavun City",
+    "url": "https://kavun.city/",
+    "article_selector": "div.card__title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Вгору",
+    "url": "https://vgoru.org/",
+    "article_selector": "div.article-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "061.ua",
+    "url": "https://www.061.ua/",
+    "article_selector": "div.article-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Інформатор Запоріжжя",
+    "url": "https://zp.informator.ua/",
+    "article_selector": "a.card__link",
+    "link_tag": null
+  },
+  {
+    "name": "Actual Today",
+    "url": "https://actual.today/",
+    "article_selector": "div.article-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Данкор Суми",
+    "url": "https://dancor.sumy.ua/",
+    "article_selector": "h3.title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Sumy Today",
+    "url": "https://sumy.today/",
+    "article_selector": "h2.post-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Сумщина Інфо",
+    "url": "https://sumschina.info/",
+    "article_selector": "div.news-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Status Quo",
+    "url": "https://www.sq.com.ua/",
+    "article_selector": "h3.news-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Об'єктив TV",
+    "url": "https://www.objectiv.tv/",
+    "article_selector": "div.post-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Главное Харьков",
+    "url": "https://gx.net.ua/",
+    "article_selector": "div.title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Накипело",
+    "url": "https://nakipelo.ua/",
+    "article_selector": "h2.card__title",
+    "link_tag": "a"
+  },
+  {
+    "name": "Суспільне Харків",
+    "url": "https://suspilne.media/kharkiv/",
+    "article_selector": "a.card-news",
+    "link_tag": null
+  },
+  {
+    "name": "ДСНС",
+    "url": "https://dsns.gov.ua/",
+    "article_selector": "div.article-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "ДСНС регіони",
+    "url": "https://dsns.gov.ua/regionalni-pidrozdili",
+    "article_selector": "div.card-body",
+    "link_tag": "a"
+  },
+  {
+    "name": "НПУ",
+    "url": "https://www.npu.gov.ua/",
+    "article_selector": "div.post-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "ГУ НПУ",
+    "url": "https://www.npu.gov.ua/kontakti/golovni-upravlinnia",
+    "article_selector": "div.card-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "МОЗ",
+    "url": "https://moz.gov.ua/",
+    "article_selector": "div.news_title",
+    "link_tag": "a"
+  },
+  {
+    "name": "СБУ",
+    "url": "https://sbu.gov.ua/",
+    "article_selector": "div.news-title",
+    "link_tag": "a"
+  },
+  {
+    "name": "УКЦ",
+    "url": "https://ukc.gov.ua/",
+    "article_selector": "div.title-news",
+    "link_tag": "a"
+  }
+]

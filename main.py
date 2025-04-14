@@ -1,3 +1,4 @@
+
 import streamlit as st
 import datetime
 import os
@@ -8,6 +9,7 @@ from docx import Document
 import smtplib
 from email.message import EmailMessage
 import asyncio
+from parser import parse_all
 
 st.set_page_config(page_title="News Monitoring Agent", layout="wide")
 st.title("📰 News Monitoring Agent")
@@ -33,10 +35,7 @@ with st.form("search_form"):
 
 if submitted:
     st.success(f"🔎 Поиск новостей по запросу: {keyword}")
-    results = [
-        {"title": "Заголовок 1", "summary": "Описание 1", "url": "https://example.com/1", "date": str(start_date)},
-        {"title": "Заголовок 2", "summary": "Описание 2", "url": "https://example.com/2", "date": str(end_date)}
-    ]
+    results = parse_all(keyword)
 
     st.write("## Найденные новости")
     for res in results:
@@ -46,12 +45,15 @@ if submitted:
 
     # PDF
     pdf = FPDF()
-pdf.add_page()
-pdf.add_font("DejaVu", "", "DejaVuSans.ttf", uni=True)
-pdf.set_font("DejaVu", size=12)
+    pdf.add_page()
+    pdf.add_font("DejaVu", "", "DejaVuSans.ttf", uni=True)
+    pdf.set_font("DejaVu", size=12)
     pdf.cell(200, 10, txt="News Report", ln=True, align='C')
     for res in results:
-        pdf.multi_cell(0, 10, f"{res['date']} — {res['title']}\n{res['summary']}\n{res['url']}\n")
+        pdf.multi_cell(0, 10, f"{res['date']} — {res['title']}
+{res['summary']}
+{res['url']}
+")
     pdf.output("report.pdf")
 
     # Word
@@ -59,9 +61,11 @@ pdf.set_font("DejaVu", size=12)
     doc.add_heading("News Report", 0)
     for res in results:
         doc.add_heading(res['title'], level=1)
-        doc.add_paragraph(f"{res['date']}\n{res['summary']}\n{res['url']}")
-
+        doc.add_paragraph(f"{res['date']}
+{res['summary']}
+{res['url']}")
     doc.save("report.docx")
+
     st.success("✅ Отчёты PDF и DOCX созданы")
 
     # Отправка Telegram
