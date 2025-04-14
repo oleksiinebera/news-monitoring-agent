@@ -56,14 +56,14 @@ if submitted:
     pdf.output("report.pdf")
 
     # Word
-    doc = Document()
-    doc.add_heading("News Report", 0)
-    for res in results:
-        doc.add_heading(res['title'], level=1)
-        doc.add_paragraph(f"{res['date']}
+doc = Document()
+doc.add_heading("News Report", 0)
+for res in results:
+    doc.add_heading(res['title'], level=1)
+    doc.add_paragraph(f"""{res['date']}
 {res['summary']}
-{res['url']}")
-    doc.save("report.docx")
+{res['url']}""")
+doc.save("report.docx")
 
     st.success("✅ Отчёты PDF и DOCX созданы")
 
