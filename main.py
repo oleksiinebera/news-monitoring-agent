@@ -50,10 +50,9 @@ if submitted:
     pdf.set_font("DejaVu", size=12)
     pdf.cell(200, 10, txt="News Report", ln=True, align='C')
     for res in results:
-        pdf.multi_cell(0, 10, f"{res['date']} — {res['title']}
+       pdf.multi_cell(0, 10, f"""{res['date']} — {res['title']}
 {res['summary']}
-{res['url']}
-")
+{res['url']}""")
     pdf.output("report.pdf")
 
     # Word
