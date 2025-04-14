@@ -21,8 +21,9 @@ from parser import parse_all
 load_dotenv() # Load environment variables from.env file if it exists
 
 # Securely load Telegram Token
+import os
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-bot = None # Initialize bot as None
+bot = Bot(token=TELEGRAM_BOT_TOKEN)
 
 if not TELEGRAM_BOT_TOKEN:
     st.error("❗ Critical Error: Telegram Bot Token (TELEGRAM_BOT_TOKEN) is not configured.")
