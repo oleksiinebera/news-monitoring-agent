@@ -9,7 +9,7 @@ from email.message import EmailMessage
 # Third-party libraries
 from dotenv import load_dotenv # For local development.env file
 from telegram import Bot, Update
-from telegram.error import TelegramError, NetworkError, BadRequest, TimedOut, Unauthorized, ChatMigrated, RetryAfter
+from telegram.error import TelegramError, NetworkError, BadRequest, TimedOut
 from fpdf import FPDF # Or from fpdf import FPDF as FPDF2 if using fpdf2
 from docx import Document
 
