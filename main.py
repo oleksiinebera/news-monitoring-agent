@@ -1,13 +1,9 @@
-
 import streamlit as st
 import datetime
 import os
-from telegram import Bot, Update
-from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
+from telegram import Bot
 from fpdf import FPDF
 from docx import Document
-import smtplib
-from email.message import EmailMessage
 import asyncio
 from parser import parse_all
 
@@ -50,20 +46,17 @@ if submitted:
     pdf.set_font("DejaVu", size=12)
     pdf.cell(200, 10, txt="News Report", ln=True, align='C')
     for res in results:
-       pdf.multi_cell(0, 10, f"""{res['date']} — {res['title']}
-{res['summary']}
-{res['url']}""")
+        text = f"{res['date']} — {res['title']}\n{res['summary']}\n{res['url']}\n"
+        pdf.multi_cell(0, 10, text)
     pdf.output("report.pdf")
 
     # Word
-doc = Document()
-doc.add_heading("News Report", 0)
-for res in results:
-    doc.add_heading(res['title'], level=1)
-    doc.add_paragraph(f"""{res['date']}
-{res['summary']}
-{res['url']}""")
-doc.save("report.docx")
+    doc = Document()
+    doc.add_heading("News Report", 0)
+    for res in results:
+        doc.add_heading(res['title'], level=1)
+        doc.add_paragraph(f"{res['date']}\n{res['summary']}\n{res['url']}")
+    doc.save("report.docx")
 
     st.success("✅ Отчёты PDF и DOCX созданы")
 
