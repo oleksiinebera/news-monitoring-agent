@@ -1,6 +1,8 @@
 streamlit
-fpdf
 python-docx
+fpdf
 python-telegram-bot==20.3
 beautifulsoup4
 requests
+lxml
+python-dotenv
