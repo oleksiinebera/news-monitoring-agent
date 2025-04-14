@@ -1,4 +1,5 @@
 import streamlit as st
+st.set_page_config(page_title="News Monitoring Agent", layout="wide")
 import datetime
 import os
 import asyncio
@@ -35,7 +36,6 @@ else:
         bot = None # Ensure bot is None if initialization fails
 
 # --- Streamlit UI ---
-st.set_page_config(page_title="News Monitoring Agent", layout="wide")
 st.title("📰 News Monitoring Agent")
 
 # --- Helper Functions ---
