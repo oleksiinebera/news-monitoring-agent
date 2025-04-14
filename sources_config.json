@@ -1,0 +1,10 @@
+{
+  "rss_sites": [
+    "https://www.pravda.com.ua/rss/",
+    "https://www.unian.ua/rss/publications"
+  ],
+  "telegram_channels": [
+    "https://t.me/uniannet",
+    "https://t.me/kyivindependent"
+  ]
+}

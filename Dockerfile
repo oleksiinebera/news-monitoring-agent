@@ -1,0 +1,3 @@
+# Dockerfile для новостного агента
+FROM python:3.11-slim
+...
